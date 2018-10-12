@@ -1,0 +1,24 @@
+1516813902713	Delete element
+1516813915495	Delete element
+1516817959462	Delete element
+1516817987818	Delete element
+1516818167126	Delete element
+1516898657590	Rename field 'INPUT'
+1516898674104	Rename field 'OUTPUT'
+1516898730440	Delete element
+1516898779294	Delete element
+1516940613693	Delete element
+1516942019849	Rename method 'isOn'
+1516942031739	Rename method 'setPowered'
+1516950409404	Delete element
+1516951258631	Rename field 'POWERED'
+1516951390155	Rename field 'POWER'
+1516954200352	Rename local variable 'tag'
+1517007383393	Rename field 'IN_BLOCKS'
+1517007393429	Rename field 'OUT_BLOCKS'
+1517008538615	Rename field 'UNPOWERED_INPUT_BLOCK'
+1517008545347	Rename field 'UNPOWERED_OUTPUT_BLOCK'
+1517014825417	Delete element
+1517021396687	Rename resource 'test'
+1517031844901	Delete element
+1517031870602	Delete element

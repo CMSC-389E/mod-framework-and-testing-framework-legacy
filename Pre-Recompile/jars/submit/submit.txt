@@ -1,0 +1,12 @@
+
+# Submit server .submit file for
+#  Course CMSC389E
+#  Project 1: ALU: Logic Portion
+
+courseName=CMSC389E
+semester=201808
+projectNumber=1
+courseKey=c0b5aa47e8bcb261
+authentication.type=ldap
+baseURL=https://submit.cs.umd.edu:443/fall2018
+submitURL=https://submit.cs.umd.edu:443/fall2018/eclipse/SubmitProjectViaEclipse

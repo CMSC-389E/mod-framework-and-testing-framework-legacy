@@ -1,0 +1,20 @@
+--Original Classes
+	com.unittest.UnitTest
+	com.unittest.block.BlockInput
+	com.unittest.block.BlockIOBase
+	com.unittest.block.OutputBlock
+	com.unittest.block.ModBlock
+	com.unittest.item.ModItem
+	com.unittest.tileentity.TileEntityInput
+	com.unittest.tileentity.TileEntityIOBase
+	com.unittest.tileentity.TileEntityOutput
+	
+--Modified Classes
+	net.minecraft.block.Block
+	net.minecraft.block.BlockRedstoneDiode
+	net.minecraft.block.BlockRedstoneTorch
+	net.minecraft.client.renderer.RenderItem
+	net.minecraft.init.Blocks
+	net.minecraft.item.Item
+	net.minecraft.tileentity.TileEntity
+	net.minecraft.world.World

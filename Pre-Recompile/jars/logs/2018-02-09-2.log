@@ -1,0 +1,156 @@
+[03:12:12] [Client thread/INFO]: Setting user: bsprouts
+[03:12:13] [Client thread/WARN]: Skipping bad option: lastServer:
+[03:12:13] [Client thread/INFO]: LWJGL Version: 2.9.4
+[03:12:15] [Client thread/INFO]: Reloading ResourceManager: Default
+[03:12:15] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[03:12:15] [Thread-3/INFO]: Initializing LWJGL OpenAL
+[03:12:15] [Thread-3/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[03:12:15] [Thread-3/INFO]: OpenAL initialized.
+[03:12:15] [Sound Library Loader/INFO]: Sound engine started
+[03:12:17] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[03:12:18] [Client thread/INFO]: Narrator library for x64 successfully loaded
+[03:12:18] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[03:13:27] [Server thread/INFO]: Starting integrated minecraft server version 1.12.2
+[03:13:27] [Server thread/INFO]: Generating keypair
+[03:13:28] [Server thread/INFO]: Loaded 488 advancements
+[03:13:28] [Server thread/INFO]: Preparing start region for level 0
+[03:13:28] [Server thread/INFO]: Changing view distance to 16, from 10
+[03:13:29] [Server thread/INFO]: bsprouts[local:E:1dd960fe] logged in with entity id 1 at (-817.8036555330398, 60.82290263354864, 566.5745763010344)
+[03:13:29] [Server thread/INFO]: bsprouts joined the game
+[03:13:29] [Server thread/INFO]: Saving and pausing game...
+[03:13:29] [Server thread/INFO]: Saving chunks for level 'Project2'/overworld
+[03:13:29] [Server thread/INFO]: Saving chunks for level 'Project2'/the_nether
+[03:13:29] [Server thread/INFO]: Saving chunks for level 'Project2'/the_end
+[03:13:30] [Client thread/INFO]: Loaded 41 advancements
+[03:13:59] [Server thread/INFO]: [STDOUT]: ran
+[03:13:59] [Client thread/INFO]: [CHAT] Loaded passed file in correctly.
+[03:14:02] [Client thread/INFO]: [CHAT] \n===============================\n=========Running Test 1 =========\n===============================
+[03:14:02] [Client thread/INFO]: [CHAT] [iI1:0, iI1:1, iI1:2, iI1:3, iI1:4, iI1:5, iI1:6, iI1:7, iI2:0, iI2:1, iI2:2, iI2:3, iI2:4, iI2:5, iI2:6, iI2:7, oI1:0, oI1:1, oI1:2, oI2:0, oI2:1, oI2:2, oa0, oa1, oa2, oa3, oa4, oa5, oa, ob, oc, od, oe, of, og]
+[03:14:02] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0] | [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0]  |  0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 1 0  |  F
+[03:14:03] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0] | [0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]  |  0 0 0 1 0 0 1 0 0 0 0 0 1 1 0 1 1 0 0  |  F
+[03:14:04] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0] | [0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1]  |  0 0 0 0 1 0 0 1 0 0 0 0 1 0 1 1 1 1 1  |  F
+[03:14:05] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0] | [0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1]  |  0 0 0 1 1 0 1 1 0 0 0 0 1 1 1 1 1 1 1  |  F
+[03:14:06] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0] | [0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1]  |  0 0 0 0 0 1 0 0 1 0 0 0 1 1 0 1 0 0 1  |  F
+[03:14:06] [Client thread/INFO]: [CHAT] Current test aborted
+[03:14:27] [Client thread/INFO]: [CHAT] \n===============================\n=========Running Test 2 =========\n===============================
+[03:14:27] [Client thread/INFO]: [CHAT] [iI1:0, iI1:1, iI1:2, iI1:3, iI1:4, iI1:5, iI1:6, iI1:7, iI2:0, iI2:1, iI2:2, iI2:3, iI2:4, iI2:5, iI2:6, iI2:7, oI1:0, oI1:1, oI1:2, oI2:0, oI2:1, oI2:2, oa0, oa1, oa2, oa3, oa4, oa5, oa, ob, oc, od, oe, of, og]
+[03:14:28] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0] | [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0]  |  0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 1 0  |  F
+[03:14:28] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0] | [0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]  |  0 0 0 1 0 0 1 0 0 0 0 0 1 1 0 1 1 0 0  |  F
+[03:14:29] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0] | [0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1]  |  0 0 0 0 1 0 0 1 0 0 0 0 1 0 1 1 1 1 1  |  F
+[03:14:30] [Server thread/INFO]: Saving and pausing game...
+[03:14:30] [Server thread/INFO]: Saving chunks for level 'Project2'/overworld
+[03:14:30] [Server thread/INFO]: Saving chunks for level 'Project2'/the_nether
+[03:14:30] [Server thread/INFO]: Saving chunks for level 'Project2'/the_end
+[03:14:30] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0] | [0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1]  |  0 0 0 1 1 0 1 1 0 0 0 0 1 1 1 1 1 1 1  |  F
+[03:14:31] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0] | [0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1]  |  0 0 0 0 0 1 0 0 1 0 0 0 1 1 0 1 0 0 1  |  F
+[03:14:31] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0] | [0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1]  |  0 0 0 1 0 1 1 0 1 0 0 0 0 1 1 1 1 0 1  |  F
+[03:14:32] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0] | [0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1]  |  0 0 0 0 1 1 0 1 1 0 0 0 0 1 1 1 0 1 1  |  F
+[03:14:33] [Client thread/INFO]: [CHAT] Current test aborted
+[03:14:35] [Server thread/INFO]: Saving and pausing game...
+[03:14:35] [Server thread/INFO]: Saving chunks for level 'Project2'/overworld
+[03:14:35] [Server thread/INFO]: Saving chunks for level 'Project2'/the_nether
+[03:14:35] [Server thread/INFO]: Saving chunks for level 'Project2'/the_end
+[03:14:43] [Server thread/INFO]: Stopping server
+[03:14:43] [Server thread/INFO]: Saving players
+[03:14:43] [Server thread/INFO]: bsprouts lost connection: Disconnected
+[03:14:43] [Server thread/INFO]: bsprouts left the game
+[03:14:43] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[03:14:43] [Server thread/INFO]: Saving worlds
+[03:14:43] [Server thread/INFO]: Saving chunks for level 'Project2'/overworld
+[03:14:43] [Server thread/INFO]: Saving chunks for level 'Project2'/the_nether
+[03:14:43] [Server thread/INFO]: Saving chunks for level 'Project2'/the_end
+[03:14:46] [Server thread/INFO]: Starting integrated minecraft server version 1.12.2
+[03:14:46] [Server thread/INFO]: Generating keypair
+[03:14:46] [Server thread/INFO]: Loaded 488 advancements
+[03:14:46] [Server thread/INFO]: Preparing start region for level 0
+[03:14:47] [Server thread/INFO]: Changing view distance to 16, from 10
+[03:14:47] [Server thread/INFO]: bsprouts[local:E:ba408739] logged in with entity id 5 at (-822.0321292526653, 60.82290263354864, 557.7603075115237)
+[03:14:47] [Server thread/INFO]: bsprouts joined the game
+[03:14:48] [Server thread/INFO]: Saving and pausing game...
+[03:14:48] [Server thread/INFO]: Saving chunks for level 'Project2'/overworld
+[03:14:48] [Server thread/INFO]: Saving chunks for level 'Project2'/the_nether
+[03:14:48] [Server thread/INFO]: Saving chunks for level 'Project2'/the_end
+[03:14:48] [Client thread/INFO]: Loaded 41 advancements
+[03:14:52] [Client thread/INFO]: [CHAT] \n===============================\n=========Running Test 3 =========\n===============================
+[03:14:52] [Client thread/INFO]: [CHAT] [iI1:0, iI1:1, iI1:2, iI1:3, iI1:4, iI1:5, iI1:6, iI1:7, iI2:0, iI2:1, iI2:2, iI2:3, iI2:4, iI2:5, iI2:6, iI2:7, oI1:0, oI1:1, oI1:2, oI2:0, oI2:1, oI2:2, oa0, oa1, oa2, oa3, oa4, oa5, oa, ob, oc, od, oe, of, og]
+[03:14:53] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0] | [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0]  |  0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 1 0  |  F
+[03:14:54] [Client thread/INFO]: [CHAT] Current test aborted
+[03:17:51] [Client thread/INFO]: [CHAT] \n===============================\n=========Running Test 4 =========\n===============================
+[03:17:51] [Client thread/INFO]: [CHAT] [iI1:0, iI1:1, iI1:2, iI1:3, iI1:4, iI1:5, iI1:6, iI1:7, iI2:0, iI2:1, iI2:2, iI2:3, iI2:4, iI2:5, iI2:6, iI2:7, oI1:0, oI1:1, oI1:2, oI2:0, oI2:1, oI2:2, oa0, oa1, oa2, oa3, oa4, oa5, oa, ob, oc, od, oe, of, og]
+[03:17:52] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0] | [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0]  |  0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 0  |  P
+[03:17:53] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0] | [0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]  |  0 0 0 1 0 0 1 0 0 0 0 0 1 1 0 1 0 0 0  |  F
+[03:17:54] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0] | [0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1]  |  0 0 0 0 1 0 0 1 0 0 0 0 1 0 1 1 0 1 1  |  F
+[03:17:55] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0] | [0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1]  |  0 0 0 1 1 0 1 1 0 0 0 0 1 1 1 1 0 1 1  |  F
+[03:17:56] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0] | [0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1]  |  0 0 0 0 0 1 0 0 1 0 0 0 1 1 0 1 1 0 1  |  F
+[03:17:56] [Client thread/INFO]: [CHAT] Current test aborted
+[03:17:58] [Client thread/INFO]: [CHAT] \n===============================\n=========Running Test 5 =========\n===============================
+[03:17:58] [Client thread/INFO]: [CHAT] [iI1:0, iI1:1, iI1:2, iI1:3, iI1:4, iI1:5, iI1:6, iI1:7, iI2:0, iI2:1, iI2:2, iI2:3, iI2:4, iI2:5, iI2:6, iI2:7, oI1:0, oI1:1, oI1:2, oI2:0, oI2:1, oI2:2, oa0, oa1, oa2, oa3, oa4, oa5, oa, ob, oc, od, oe, of, og]
+[03:18:00] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0] | [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0]  |  0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 0  |  P
+[03:18:01] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0] | [0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]  |  0 0 0 1 0 0 1 0 0 0 0 0 1 1 0 1 0 0 0  |  F
+[03:18:02] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0] | [0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1]  |  0 0 0 0 1 0 0 1 0 0 0 0 1 0 1 1 0 1 1  |  F
+[03:18:03] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0] | [0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1]  |  0 0 0 1 1 0 1 1 0 0 0 0 1 1 1 1 0 1 1  |  F
+[03:18:04] [Client thread/INFO]: [CHAT] Current test aborted
+[03:19:05] [Server thread/INFO]: Saving and pausing game...
+[03:19:05] [Server thread/INFO]: Saving chunks for level 'Project2'/overworld
+[03:19:05] [Server thread/INFO]: Saving chunks for level 'Project2'/the_nether
+[03:19:05] [Server thread/INFO]: Saving chunks for level 'Project2'/the_end
+[03:25:26] [Server thread/INFO]: [STDOUT]: ran
+[03:25:26] [Client thread/INFO]: [CHAT] Loaded passed file in correctly.
+[03:25:28] [Client thread/INFO]: [CHAT] \n===============================\n=========Running Test 1 =========\n===============================
+[03:25:28] [Client thread/INFO]: [CHAT] [iI1:0, iI1:1, iI1:2, iI1:3, iI1:4, iI1:5, iI1:6, iI1:7, iI2:0, iI2:1, iI2:2, iI2:3, iI2:4, iI2:5, iI2:6, iI2:7, oI1:0, oI1:1, oI1:2, oI2:0, oI2:1, oI2:2, oa0, oa1, oa2, oa3, oa4, oa5, oa, ob, oc, od, oe, of, og]
+[03:25:29] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0] | [0, 0, 0, 0, 0, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 0 0 0  |  P
+[03:25:30] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0] | [0, 0, 0, 1, 0, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 1 0 0  |  P
+[03:25:30] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0] | [0, 0, 0, 0, 1, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 0 1 0  |  P
+[03:25:31] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0] | [0, 0, 0, 1, 1, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 1 1 0  |  P
+[03:25:32] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0] | [0, 0, 0, 0, 0, 1, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 0 0 1  |  P
+[03:25:33] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0] | [0, 0, 0, 1, 0, 1, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 1 0 1  |  P
+[03:25:34] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0] | [0, 0, 0, 0, 1, 1, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 0 1 1  |  P
+[03:25:35] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1] | [0, 0, 0, 1, 1, 1, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 1 1 1  |  P
+[03:25:36] [Client thread/INFO]: [CHAT] [0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0] | [1, 0, 0, 0, 0, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  e 0 0 0 0 0  |  F
+[03:25:36] [Client thread/INFO]: [CHAT] [0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0] | [1, 0, 0, 1, 0, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  e 0 0 1 0 0  |  F
+[03:25:37] [Client thread/INFO]: [CHAT] [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0] | [1, 0, 0, 0, 1, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  e 0 0 0 1 0  |  F
+[03:25:39] [Client thread/INFO]: [CHAT] [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0] | [1, 0, 0, 1, 1, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  e 0 0 1 1 0  |  F
+[03:25:40] [Client thread/INFO]: [CHAT] [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0] | [1, 0, 0, 0, 0, 1, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  e 0 0 0 0 1  |  F
+[03:25:41] [Client thread/INFO]: [CHAT] [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0] | [1, 0, 0, 1, 0, 1, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  e 0 0 1 0 1  |  F
+[03:25:42] [Client thread/INFO]: [CHAT] [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0] | [1, 0, 0, 0, 1, 1, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  e 0 0 0 1 1  |  F
+[03:25:43] [Client thread/INFO]: [CHAT] [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1] | [1, 0, 0, 1, 1, 1, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  e 0 0 1 1 1  |  F
+[03:25:44] [Client thread/INFO]: [CHAT] Current test aborted
+[03:25:46] [Client thread/INFO]: [CHAT] \n===============================\n=========Running Test 2 =========\n===============================
+[03:25:46] [Client thread/INFO]: [CHAT] [iI1:0, iI1:1, iI1:2, iI1:3, iI1:4, iI1:5, iI1:6, iI1:7, iI2:0, iI2:1, iI2:2, iI2:3, iI2:4, iI2:5, iI2:6, iI2:7, oI1:0, oI1:1, oI1:2, oI2:0, oI2:1, oI2:2, oa0, oa1, oa2, oa3, oa4, oa5, oa, ob, oc, od, oe, of, og]
+[03:25:47] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0] | [0, 0, 0, 0, 0, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 0 0 0  |  P
+[03:25:48] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0] | [0, 0, 0, 1, 0, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 1 0 0  |  P
+[03:25:49] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0] | [0, 0, 0, 0, 1, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 0 1 0  |  P
+[03:25:51] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0] | [0, 0, 0, 1, 1, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 1 1 0  |  P
+[03:25:52] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0] | [0, 0, 0, 0, 0, 1, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 0 0 1  |  P
+[03:25:53] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0] | [0, 0, 0, 1, 0, 1, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 1 0 1  |  P
+[03:25:55] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0] | [0, 0, 0, 0, 1, 1, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 0 1 1  |  P
+[03:25:56] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1] | [0, 0, 0, 1, 1, 1, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 1 1 1  |  P
+[03:25:58] [Client thread/INFO]: [CHAT] [0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0] | [1, 0, 0, 0, 0, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  e 0 0 0 0 0  |  F
+[03:25:59] [Client thread/INFO]: [CHAT] [0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0] | [1, 0, 0, 1, 0, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  e 0 0 1 0 0  |  F
+[03:26:01] [Client thread/INFO]: [CHAT] [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0] | [1, 0, 0, 0, 1, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  e 0 0 0 1 0  |  F
+[03:26:02] [Client thread/INFO]: [CHAT] [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0] | [1, 0, 0, 1, 1, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  e 0 0 1 1 0  |  F
+[03:26:03] [Client thread/INFO]: [CHAT] Current test aborted
+[03:26:37] [Server thread/INFO]: Saving and pausing game...
+[03:26:37] [Server thread/INFO]: Saving chunks for level 'Project2'/overworld
+[03:26:37] [Server thread/INFO]: Saving chunks for level 'Project2'/the_nether
+[03:26:37] [Server thread/INFO]: Saving chunks for level 'Project2'/the_end
+[03:28:13] [Client thread/INFO]: [CHAT] \n===============================\n=========Running Test 3 =========\n===============================
+[03:28:13] [Client thread/INFO]: [CHAT] [iI1:0, iI1:1, iI1:2, iI1:3, iI1:4, iI1:5, iI1:6, iI1:7, iI2:0, iI2:1, iI2:2, iI2:3, iI2:4, iI2:5, iI2:6, iI2:7, oI1:0, oI1:1, oI1:2, oI2:0, oI2:1, oI2:2, oa0, oa1, oa2, oa3, oa4, oa5, oa, ob, oc, od, oe, of, og]
+[03:28:14] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0] | [0, 0, 0, 0, 0, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 0 0 0  |  P
+[03:28:15] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0] | [0, 0, 0, 1, 0, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 1 0 0  |  P
+[03:28:17] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0] | [0, 0, 0, 0, 1, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 0 1 0  |  P
+[03:28:18] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0] | [0, 0, 0, 1, 1, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 1 1 0  |  P
+[03:28:19] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0] | [0, 0, 0, 0, 0, 1, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 0 0 1  |  P
+[03:28:21] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0] | [0, 0, 0, 1, 0, 1, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 1 0 1  |  P
+[03:28:22] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0] | [0, 0, 0, 0, 1, 1, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 0 1 1  |  P
+[03:28:24] [Client thread/INFO]: [CHAT] [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1] | [0, 0, 0, 1, 1, 1, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  0 0 0 1 1 1  |  P
+[03:28:25] [Client thread/INFO]: [CHAT] [0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0] | [1, 0, 0, 0, 0, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  e 0 0 0 0 0  |  F
+[03:28:26] [Client thread/INFO]: [CHAT] [0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0] | [1, 0, 0, 1, 0, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  e 0 0 1 0 0  |  F
+[03:28:28] [Client thread/INFO]: [CHAT] [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0] | [1, 0, 0, 0, 1, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  e 0 0 0 1 0  |  F
+[03:28:30] [Client thread/INFO]: [CHAT] [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0] | [1, 0, 0, 1, 1, 0, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  e 0 0 1 1 0  |  F
+[03:28:31] [Client thread/INFO]: [CHAT] [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0] | [1, 0, 0, 0, 0, 1, o, o, o, o, o, o, o, o, o, o, o, o, o]  |  e 0 0 0 0 1  |  F
+[03:28:32] [Client thread/INFO]: [CHAT] Current test aborted
+[03:28:33] [Server thread/INFO]: Saving and pausing game...
+[03:28:33] [Server thread/INFO]: Saving chunks for level 'Project2'/overworld
+[03:28:33] [Server thread/INFO]: Saving chunks for level 'Project2'/the_nether
+[03:28:33] [Server thread/INFO]: Saving chunks for level 'Project2'/the_end

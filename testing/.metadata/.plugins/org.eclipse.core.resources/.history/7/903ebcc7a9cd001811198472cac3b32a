@@ -1,0 +1,318 @@
+import static org.junit.Assert.*;
+
+import java.io.File;
+import java.io.FileDescriptor;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+import java.util.Arrays;
+import java.util.Scanner;
+
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import junit.framework.AssertionFailedError;
+
+public class PublicTests {
+	public static final String submit = "submit.txt";
+	public static final String results = "results.txt";
+	public static final int rowWidth = 14;
+
+	/*
+	 * r1: beginning of exp loop
+	 * r4: beginning of mult loop
+	 */
+//	public static int[] inputs = {
+///*0*/	0,1,0,0,	1,0,1,	0,0,0,	0,0,0,1, //set the initial product to 1
+///*1*/	0,0,1,1,	1,1,1,	1,0,1,	0,0,0,0, //set our current count to be the product from before
+///*2*/	1,0,1,0,	0,0,0,	0,1,1,	0,0,0,0, //end the loop when no more powers and exit
+///*3*/	0,1,1,0,	0,1,1,	0,1,1,	0,0,0,1, //exp -= 1
+///*4*/	0,0,1,1,	1,0,0,	0,1,0,	0,0,0,0, //set countdown
+///*5*/	0,0,1,1,	1,0,1,	0,0,0,	0,0,0,0, //zero out current product
+///*6*/	1,0,1,0,	0,0,0,	1,0,0,	0,0,0,1, //if no more to do in product, jump back to power outer loop
+///*7*/	0,0,1,1,	1,0,1,	1,1,1,	0,1,0,1, //counter += current product base times.  prod * a
+///*8*/	0,1,1,0,	1,0,0,	1,0,0,	0,0,0,1, //decrement counter for product
+///*9*/	1,0,1,0,	0,0,0,	0,0,0,	0,1,1,0  //jump back up in loop
+//		
+		
+//	};
+	
+	/*
+	 * r1: beginning of exp loop
+	 * r4: beginning of mult loop
+	 */
+	public static int[] inputs = {
+/*0*/	0,1,0,0,	1,0,1,	0,0,0,	0,0,0,1, //set the initial product to 1
+/*1*/	0,0,1,1,	1,1,1,	1,0,1,	0,0,0,0, //set our current count to be the product from before
+/*2*/	0,0,0,0,	0,0,0,	0,0,0,	0,0,0,0, //end the loop when no more powers and exit
+/*3*/	0,1,1,0,	0,1,1,	0,1,1,	0,0,0,1, //exp -= 1
+/*4*/	0,0,1,1,	1,0,0,	0,1,0,	0,0,0,0, //set countdown
+/*5*/	0,0,1,1,	1,0,1,	0,0,0,	0,0,0,0, //zero out current product
+/*6*/	1,0,1,0,	0,0,0,	1,0,0,	0,0,0,1, //if no more to do in product, jump back to power outer loop
+/*7*/	0,0,1,1,	1,0,1,	1,1,1,	0,1,0,1, //counter += current product base times.  prod * a
+/*8*/	0,1,1,0,	1,0,0,	1,0,0,	0,0,0,1, //decrement counter for product
+/*9*/	1,0,1,0,	0,0,0,	0,0,0,	0,1,1,0  //jump back up in loop		
+	};
+	
+	public static String[] testoutputs = new String[inputs.length];
+	
+	public static int[] registers = {0,0,0,0,0,0,0,0};
+	public static final int[] parts = {4, 3, 3, 4};
+	public static int PC = 0;
+	
+	public static String dialogue;
+	
+	
+	@BeforeClass
+	public static void setup() {
+		for (int i = 0; i < inputs.length; i ++) {
+			testoutputs[i] = (inputs[i] == 0) ? "false" : "true";
+		}
+	}
+	
+//	@BeforeClass
+//	public static void setup() {
+//		try {
+//			File key1 = new File(submit);
+//			FileInputStream keyin = new FileInputStream(submit);
+//			byte key[] = new byte[(int) key1.length()];
+//			keyin.read(key);
+//			File data1 = new File(results);
+//			FileInputStream datain = new FileInputStream(results);
+//			//byte[] data = datain.readAllBytes();
+//			byte data[] = new byte[(int)data1.length()];
+//			datain.read(data);
+//
+//			keyin.close();
+//			datain.close();
+//
+//			for (int i = 0; i < data.length; i++) {
+//				data[i] = (byte) (data[i] ^ key[i % key.length]);
+//			}
+//
+//			String[] results = new String(data).split("\nEOF\n"); // {test results\nEOF\nplayers}
+//			
+//			testoutputs = results[0].split("\n");
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//		
+//	}
+	
+	@Before
+	public void beforeTest() {
+		dialogue = "Your program (in machine code): \n" + toReadable(testoutputs);
+	}
+	
+
+	@Test
+	public void testExp1() {
+		try {
+			run_prog(3,5);
+		}
+		catch (AssertionFailedError | CompilerError e) {
+			throw new AssertionFailedError(dialogue + e.getStackTrace());
+		}
+	}
+	
+	
+	@Test
+	public void testExp2() {
+	try {
+		run_prog(1,1);
+	}
+	catch (AssertionFailedError | CompilerError e) {
+		throw new AssertionFailedError(dialogue + e.getStackTrace());
+	}
+	}
+	
+	@Test
+	public void testExp3() {
+		try {
+			run_prog(4,3);
+		}
+		catch (AssertionFailedError | CompilerError e) {
+			throw new AssertionFailedError(dialogue + e.getStackTrace());
+		}
+	}
+	
+	private void run_prog(int r2_init, int r3_init) {
+		Scanner sc = new Scanner(System.in);
+		for (int i = 0; i < registers.length; i++) {
+			registers[i] = 0; //clear registers before program
+			
+		}
+		PC = 0;
+		dialogue += "\n\n-------PROGRAM START--------\n\n\n";
+		registers[2] = r2_init;
+		registers[3] = r3_init;
+		int[] command = new int[4];
+		boolean is_over;
+		do {
+			print_program_state();
+			is_over = read_line(command); //stick current line in
+			dialogue += "Executing command: " + Arrays.toString(command) + '\n';
+			exec(command[0], command[1], command[2], command[3]);
+			//sc.nextLine();
+			PC += 1;
+		} while (!is_over);
+		
+		System.out.println(PC);
+		exit(0);
+		
+		assertEquals((int)Math.pow(r2_init, r3_init),registers[7]);
+	}
+	
+	private static void print_program_state() {
+		dialogue += "----------------------------------\nPC: " + PC + "\n\n";
+		for (int i = 0; i < registers.length; i++) {
+			dialogue += "Register " + i + ":\t" + registers[i] + '\n';
+		}
+		dialogue += '\n';
+	}
+	
+	
+	
+	private static boolean read_line(int[] command) {
+		if (PC == testoutputs.length / rowWidth)
+			return true;
+		int start_pos = rowWidth * PC;
+		
+		int sum = 0;
+		for (int i = 0; i < parts.length; i++) {
+			command[i] = 0;
+			for (int j = 0; j < parts[i]; j++) {
+				if (testoutputs[start_pos + sum + j].equals("true")) {
+					command[i] |= 1 << (parts[i] - j - 1);
+				}
+			}
+			sum += parts[i];
+		}
+		
+		return (command[0] | command[1] | command[2] | command[3]) == 0;
+	}
+	
+	private static void exec(int opcode, int arg1, int arg2, int arg3) throws ArrayIndexOutOfBoundsException {
+		String operation = "oops";
+		boolean dereference = false;
+		int temp = arg3;
+		boolean hasDestination = true;
+		int lastPC = PC;
+		if (arg1 == 0 && opcode != 10) 
+			throw new CompilerError("Tried to write to zero register at line: " + PC);
+		
+		if (arg2 > 7 ) {
+			throw new CompilerError("Tried to dereference register " + arg2 + " at line " + PC);
+		}
+		
+		if (opcode < 6 && opcode != 4) {
+			dereference = true;
+			if (arg3 > 7)
+				throw new CompilerError("Tried to dereference register " + arg3 + " at line " + PC);
+		}
+		
+		switch (opcode) {
+			case 0: //xor r2 r3 -> r1
+				operation = "xor";
+				registers[arg1] = registers[arg2] ^ registers[arg3];
+				break;
+			case 1: //and r2 r3 -> r1
+				operation = "and";
+				registers[arg1] = registers[arg2] & registers[arg3];
+				break;
+			case 2: //or r2 r3 -> r1
+				operation = "or";
+				registers[arg1] = registers[arg2] | registers[arg3];
+				break;
+			case 3: //add r2 r3 -> r1
+				temp = arg3;
+				arg3 = registers[arg3];
+			case 4: //add r2 imm -> r1
+				operation = "add";
+				registers[arg1] = (registers[arg2] + arg3);
+				break;
+			case 5: //sub r2 - r3 -> r1
+				arg3 = registers[arg3];
+				break;
+			case 6: //sub r2 - imm -> r1
+				operation = "sub";
+				registers[arg1] = (registers[arg2] - arg3);
+				break;
+			case 7: //r2 << 1 -> r1
+				operation = "bitshift left";
+				registers[arg1] = (registers[arg2] << 1);
+				break;
+			case 8: //r2 >> 1 -> r1
+				operation = "bitshift right";
+				registers[arg1] = (registers[arg2] >> 1);
+				break;
+			case 9: //r2 -r3 < 0 -> r1 = 1, else 0
+				operation = "slt";
+				registers[arg1] = (registers[arg2] < registers[arg3]) ? 1 : 0;
+				break;
+			case 10: //r2 = 0, PC = R3
+				hasDestination = false;
+				operation = "brancheq";
+				if (registers[arg2] == 0)
+					if (arg3 == 0) {
+						PC = testoutputs.length / rowWidth - 1;
+					}
+					else {
+						PC = arg3 - 1;
+					}
+				break;	
+			case 11: //stored at r2 + imm -> r1
+			case 12: //take r1 and stick in r2 + imm
+				throw new CompilerError("Tried to use a load/store command at line: " + PC);
+			default:
+				throw new CompilerError("Tried to use command " + opcode + 
+						"This is not in the valid command range. Line: " + PC);
+			
+		}
+		
+		dialogue += "Line " + lastPC + ": executing " + operation + 
+				" with register " + arg2 + " (value " + registers[arg2] +") and " +
+				((dereference) ? "register " + temp + " (value " + arg3 + ")" :
+					"immediate " + arg3) + ".  " + (hasDestination ? "Destination: Register " + arg1 + "." : "") + '\n';
+	}
+	
+	private static String toReadable(String[] inputs) {
+		String output = "";
+		for (int row = 0; row < inputs.length / rowWidth; row ++ ) {
+			int[] command = {0,0,0,0};
+			int sum = 0;
+			for (int i = 0; i < parts.length; i++) {
+				for (int j = 0; j < parts[i]; j++) {
+					if (testoutputs[row * rowWidth + sum + j].equals("true")) {
+						command[i] |= 1 << (parts[i] - j - 1);
+					}
+				}
+				sum += parts[i];
+			}
+			
+			output += Arrays.toString(command) + "\n";
+		}
+		
+		return output;
+		
+		
+		
+	}
+	
+	
+	private static class CompilerError extends Error {
+
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+
+		public CompilerError(String string) {
+			super(string);
+		}
+		
+	}
+
+}

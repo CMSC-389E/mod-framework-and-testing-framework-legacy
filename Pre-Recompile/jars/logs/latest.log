@@ -1,0 +1,29 @@
+[14:59:01] [Client thread/WARN]: Skipping bad option: lastServer:
+[14:59:01] [Client thread/INFO]: LWJGL Version: 2.9.4
+[14:59:02] [Client thread/INFO]: Reloading ResourceManager: Default
+[14:59:15] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[14:59:16] [Thread-3/INFO]: Initializing LWJGL OpenAL
+[14:59:16] [Thread-3/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[14:59:16] [Thread-3/INFO]: OpenAL initialized.
+[14:59:16] [Sound Library Loader/INFO]: Sound engine started
+[14:59:19] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[14:59:22] [Client thread/INFO]: Narrator library for x64 successfully loaded
+[14:59:23] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[14:59:33] [Client thread/INFO]: Stopping!
+[14:59:33] [Client thread/INFO]: SoundSystem shutting down...
+[14:59:33] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[11:49:31] [Client thread/INFO]: Setting user: bsprouts
+[11:49:32] [Client thread/WARN]: Skipping bad option: lastServer:
+[11:49:32] [Client thread/INFO]: LWJGL Version: 2.9.4
+[11:49:33] [Client thread/INFO]: Reloading ResourceManager: Default
+[11:49:33] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[11:49:34] [Thread-3/INFO]: Initializing LWJGL OpenAL
+[11:49:34] [Thread-3/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[11:49:34] [Thread-3/INFO]: OpenAL initialized.
+[11:49:34] [Sound Library Loader/INFO]: Sound engine started
+[11:49:36] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[11:49:37] [Client thread/INFO]: Narrator library for x64 successfully loaded
+[11:49:37] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[11:49:48] [Client thread/INFO]: Stopping!
+[11:49:48] [Client thread/INFO]: SoundSystem shutting down...
+[11:49:48] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

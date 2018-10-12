@@ -1,0 +1,35 @@
+---- Minecraft Crash Report ----
+// I blame Dinnerbone.
+
+Time: 1/26/18 7:36 PM
+Description: Exception in server tick loop
+
+java.lang.Error: Unresolved compilation problems: 
+	CommandSubmit cannot be resolved to a variable
+	CommandSubmit cannot be resolved to a variable
+
+	at net.minecraft.world.World.myInitialize(World.java:83)
+	at net.minecraft.world.World.<init>(World.java:78)
+	at net.minecraft.world.WorldServer.<init>(WorldServer.java:116)
+	at net.minecraft.server.integrated.IntegratedServer.loadAllWorlds(IntegratedServer.java:107)
+	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:143)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:527)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_162, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 960485696 bytes (915 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Profiler Position: N/A (disabled)
+	Player Count: 0 / 8; []
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Very likely; Jar signature invalidated

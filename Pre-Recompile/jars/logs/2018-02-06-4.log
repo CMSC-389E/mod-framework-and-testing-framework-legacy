@@ -1,0 +1,47 @@
+[00:28:26] [Client thread/INFO]: Setting user: bsprouts
+[00:28:28] [Client thread/WARN]: Skipping bad option: lastServer:
+[00:28:28] [Client thread/INFO]: LWJGL Version: 2.9.4
+[00:28:29] [Client thread/INFO]: Reloading ResourceManager: Default
+[00:28:29] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[00:28:29] [Thread-3/INFO]: Initializing LWJGL OpenAL
+[00:28:29] [Thread-3/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[00:28:29] [Thread-3/INFO]: OpenAL initialized.
+[00:28:30] [Sound Library Loader/INFO]: Sound engine started
+[00:28:31] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[00:28:32] [Client thread/INFO]: Narrator library for x64 successfully loaded
+[00:28:33] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[00:28:43] [Server thread/INFO]: Starting integrated minecraft server version 1.12.2
+[00:28:43] [Server thread/INFO]: Generating keypair
+[00:28:43] [Server thread/INFO]: Loaded 488 advancements
+[00:28:43] [Server thread/INFO]: Preparing start region for level 0
+[00:28:44] [Server thread/INFO]: Changing view distance to 16, from 10
+[00:28:44] [Server thread/INFO]: bsprouts[local:E:d3e605b8] logged in with entity id 9 at (853.6865378140719, 11.613951427348045, -76.81744142900001)
+[00:28:44] [Server thread/INFO]: bsprouts joined the game
+[00:28:45] [Server thread/INFO]: Saving and pausing game...
+[00:28:45] [Server thread/INFO]: Saving chunks for level 'Project1'/overworld
+[00:28:45] [Server thread/INFO]: Saving chunks for level 'Project1'/the_nether
+[00:28:45] [Server thread/INFO]: Saving chunks for level 'Project1'/the_end
+[00:28:45] [Client thread/INFO]: Loaded 14 advancements
+[00:28:47] [Server thread/WARN]: Couldn't process command: set off
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at modblocks.CommandSetInput.execute(CommandSetInput.java:39) ~[bin/:?]
+	at net.minecraft.command.CommandHandler.tryExecute(CommandHandler.java:114) [bin/:?]
+	at net.minecraft.command.CommandHandler.executeCommand(CommandHandler.java:86) [bin/:?]
+	at net.minecraft.network.NetHandlerPlayServer.handleSlashCommand(NetHandlerPlayServer.java:1000) [bin/:?]
+	at net.minecraft.network.NetHandlerPlayServer.processChatMessage(NetHandlerPlayServer.java:978) [bin/:?]
+	at net.minecraft.network.play.client.CPacketChatMessage.processPacket(CPacketChatMessage.java:47) [bin/:?]
+	at net.minecraft.network.play.client.CPacketChatMessage.processPacket(CPacketChatMessage.java:1) [bin/:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:15) [bin/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_161]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_161]
+	at net.minecraft.util.Util.runTask(Util.java:47) [bin/:?]
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:765) [bin/:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:711) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:175) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:567) [bin/:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
+[00:28:47] [Client thread/INFO]: [CHAT] An unknown error occurred while attempting to perform this command
+[00:28:48] [Server thread/INFO]: Saving and pausing game...
+[00:28:48] [Server thread/INFO]: Saving chunks for level 'Project1'/overworld
+[00:28:48] [Server thread/INFO]: Saving chunks for level 'Project1'/the_nether
+[00:28:48] [Server thread/INFO]: Saving chunks for level 'Project1'/the_end

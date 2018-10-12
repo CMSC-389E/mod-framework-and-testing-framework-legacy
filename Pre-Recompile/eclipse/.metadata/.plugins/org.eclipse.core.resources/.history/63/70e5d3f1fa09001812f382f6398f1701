@@ -1,0 +1,214 @@
+package modblocks;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+import net.minecraft.command.CommandBase;
+import net.minecraft.command.CommandException;
+import net.minecraft.command.ICommandSender;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.util.text.TextComponentString;
+
+public class CommandLoad extends CommandBase {
+	
+
+
+	public String getName() {
+		return "load";
+	}
+	
+    /**
+     * Return the required permission level for this command.
+     */
+    public int getRequiredPermissionLevel()
+    {
+        return 0;
+    }
+        
+    public void execute(MinecraftServer server, ICommandSender sender, String[] args) throws CommandException
+    {
+    	CommandSubmit.mostRecentTestRun = null;
+    	CommandTest.keys = null;
+    	CommandTest.labels = null;
+    	CommandTest.runs = null;
+    	CommandTest.testFile = null;
+    	CommandTest.testCount = 0;
+    	File jartest = new File("submit.jar");
+    	if (!jartest.exists()) {
+    		InputStream loadsubmitjar = null;
+			try {
+				loadsubmitjar = new URL("http://www.cs.umd.edu/~abrassel/submit.jar").openStream();
+	    		Files.copy(loadsubmitjar, Paths.get("submit.jar"), StandardCopyOption.REPLACE_EXISTING);
+			} catch(MalformedURLException e) {
+				throw new CommandException("Tried to load an invalid submit.jar url: "+e.getMessage());
+			} catch(IOException e) {
+				throw new CommandException("Could not read remote submit.jar into local submit.jar");
+			}
+			finally {
+				try {
+					loadsubmitjar.close();
+				} catch(IOException e) {
+					e.printStackTrace();
+				}
+			}
+
+    	}
+    	if (args.length == 1) {
+    		sender.sendMessage(new TextComponentString("Attempting to read project file " + args[0] + " from www.cs.umd.edu/~abrassel"));
+    		try {
+    			Integer.parseInt(args[0]);
+    			InputStream tests = new URL("http://www.cs.umd.edu/~abrassel/proj"+args[0]+"tests.txt").openStream();
+    			InputStream submit = new URL("http://www.cs.umd.edu/~abrassel/proj"+args[0]+"submit").openStream();
+    			InputStream submit2 = new URL("http://www.cs.umd.edu/~abrassel/proj"+args[0]+"submit").openStream();
+    			
+              
+              
+                try {
+                	File f = new File("submit");
+                	if (!f.exists()) {
+                		f.mkdir();
+                		FileInputStream jarin = new FileInputStream("submit.jar");
+                		FileOutputStream jarout = new FileOutputStream(Paths.get("submit","submit.jar").toFile());
+                		jarout.getChannel().transferFrom(jarin.getChannel(), 0, jarin.getChannel().size());
+                		jarin.close();
+                		jarout.close();
+                	}
+        			Files.copy(tests, Paths.get("tests.txt"), StandardCopyOption.REPLACE_EXISTING);
+        			Files.copy(submit, Paths.get("submit","submit.txt"), StandardCopyOption.REPLACE_EXISTING);
+        			Files.copy(submit2, Paths.get("submit",".submit"), StandardCopyOption.REPLACE_EXISTING);
+        			submit.close();
+        			submit2.close();
+        			tests.close();
+        			
+        			CommandTest.runs = null;
+        			CommandTest.keys = null;
+        			
+        			sender.sendMessage(new TextComponentString("Was able to successfully read project" + args[0] +" from www.cs.umd.edu/~abrassel"));
+        			return;
+        			
+        		} catch (IOException e) {
+        			System.out.println(e.getMessage());
+        			throw new CommandException("Missing submit.jar, or tests.txt was being used by another process.  Try running again.", new Object[0]);
+        		}
+
+    		}
+    		catch (NumberFormatException e) {
+    			throw new CommandException("You must pass a valid project number.");
+    		} catch (MalformedURLException e) {
+    			System.out.println(e.getMessage());
+				throw new CommandException("This is not a valid project");
+			} catch (IOException e) {
+				System.out.println(e.getMessage());
+				throw new CommandException("This is not a valid project");
+			}
+    	}
+    	
+        if (args.length != 2 || !(args[0].equals("submit") || args[0].equals("test"))) {
+        	throw new CommandException("\"/load <submit/test> <pathto>\"", new Object[0]);
+        }
+        
+        if (args[0].equals("submit")) {
+        	FileInputStream in;
+            FileInputStream in2;
+            FileOutputStream out;
+            FileOutputStream out2;
+            
+            try {
+    			in = new FileInputStream(args[1]);
+    			in2 = new FileInputStream(args[1]);
+    		} catch (FileNotFoundException e) {
+    			throw new CommandException("The file you passed in is invalid: " +(new File(args[1])).getAbsolutePath(), new Object[0]);
+    		}
+            
+            try {
+            	File f = new File("submit");
+            	if (!f.exists()) {
+            		f.mkdir();
+            		FileInputStream jarin = new FileInputStream("submit.jar");
+            		FileOutputStream jarout = new FileOutputStream(Paths.get("submit","submit.jar").toFile());
+            		jarout.getChannel().transferFrom(jarin.getChannel(), 0, jarin.getChannel().size());
+            		jarin.close();
+            		jarout.close();
+            	}
+    			out = new FileOutputStream(Paths.get("submit","submit.txt").toFile());
+    			out2 = new FileOutputStream(Paths.get("submit",".submit").toFile());
+    			out.getChannel().transferFrom(in.getChannel(), 0, in.getChannel().size());
+    			out2.getChannel().transferFrom(in2.getChannel(), 0, in2.getChannel().size());
+    			in.close();
+    			in2.close();
+    			sender.sendMessage(new TextComponentString("Loaded passed file in correctly."));
+    		} catch (IOException e) {
+    			throw new CommandException("You done goofed A-A-ron.  Come find us.", new Object[0]);
+    		}
+            
+            try {
+    			in.close();
+    	        out.close();
+    	        out2.close();
+    		} catch (IOException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+        }
+        else {
+        	CommandTest.runs = null;
+        	CommandTest.keys = null;
+        	FileInputStream in;
+        	FileOutputStream out;
+        	try {
+				in = new FileInputStream(args[1]);
+	        	out = new FileOutputStream("tests.txt");
+    		} catch (FileNotFoundException e) {
+    			System.out.println(e.getMessage());
+    			throw new CommandException("The file you passed in is invalid: " + (new File(args[1])).getAbsolutePath(), new Object[0]);
+    		}
+        	
+        	try {
+				out.getChannel().transferFrom(in.getChannel(), 0, in.getChannel().size());
+			} catch (IOException e) {
+				try {
+					in.close();
+					out.close();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				throw new CommandException("You done goofed A-A-ron.  Come find us.", new Object[0]);
+			}
+        	
+            try {
+    			in.close();
+    	        out.close();
+    			sender.sendMessage(new TextComponentString("Loaded passed file in correctly."));
+    		} catch (IOException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+
+        }
+        
+        
+
+    }
+
+	@Override
+	public String getUsage(ICommandSender sender) {
+		return "Load a new file in";
+	}
+	
+	public static class TestRun {
+		String testResults;
+		
+		public TestRun(String newTest) {
+			testResults = newTest;
+		}
+	}
+}

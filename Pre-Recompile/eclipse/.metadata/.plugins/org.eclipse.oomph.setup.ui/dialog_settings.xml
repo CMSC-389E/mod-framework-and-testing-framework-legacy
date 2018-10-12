@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SetupWizard">
+		<section name="ProgressPage">
+			<item value="true" key="restartIfNeeded"/>
+			<item value="true" key="dismissAutomatically"/>
+		</section>
+		<section name="ConfirmationPage">
+			<item value="true" key="showAll"/>
+		</section>
+		<section name="VariablePage">
+		</section>
+	</section>
+</section>

@@ -1,0 +1,51 @@
+[20:15:27] [Client thread/INFO]: Setting user: bsprouts
+[20:15:28] [Client thread/WARN]: Skipping bad option: lastServer:
+[20:15:28] [Client thread/INFO]: LWJGL Version: 2.9.4
+[20:15:29] [Client thread/INFO]: Reloading ResourceManager: Default
+[20:15:30] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[20:15:30] [Thread-3/INFO]: Initializing LWJGL OpenAL
+[20:15:30] [Thread-3/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[20:15:30] [Thread-3/INFO]: OpenAL initialized.
+[20:15:30] [Sound Library Loader/INFO]: Sound engine started
+[20:15:32] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[20:15:33] [Client thread/INFO]: Narrator library for x64 successfully loaded
+[20:15:34] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[20:15:39] [Server thread/INFO]: Starting integrated minecraft server version 1.12.2
+[20:15:39] [Server thread/INFO]: Generating keypair
+[20:15:39] [Server thread/INFO]: Loaded 488 advancements
+[20:15:39] [Server thread/INFO]: Preparing start region for level 0
+[20:15:40] [Server thread/INFO]: Changing view distance to 16, from 10
+[20:15:40] [Server thread/INFO]: bsprouts[local:E:67bf7079] logged in with entity id 7 at (853.1962099841634, 10.664257794666721, -74.0171373283915)
+[20:15:40] [Server thread/INFO]: bsprouts joined the game
+[20:15:41] [Server thread/INFO]: Saving and pausing game...
+[20:15:41] [Server thread/INFO]: Saving chunks for level 'Project1'/overworld
+[20:15:41] [Server thread/INFO]: Saving chunks for level 'Project1'/the_nether
+[20:15:41] [Server thread/INFO]: Saving chunks for level 'Project1'/the_end
+[20:15:41] [Client thread/INFO]: Loaded 12 advancements
+[20:15:59] [Client thread/INFO]: [CHAT] \n===============================\n=========Running Test 1 =========\n===============================
+[20:15:59] [Client thread/INFO]: [CHAT] [iA, iB, iC, oFALSE, oTRUE, oAND, oOR, oNOR, oNOT, oXOR, oIMPLIES, oEQUIV, oCOMPLEX, oX]
+[20:16:00] [Client thread/INFO]: [CHAT] [0, 0, 0] | [0, 1, 0, 0, 1, 1, 0, 1]  |  0 1 0 0 1 1 1 1 0 0 1  |  F
+[20:16:00] [Client thread/INFO]: [CHAT] [0, 0, 1] | [0, 1, 0, 0, 1, 1, 0, 1]  |  0 1 0 0 1 1 1 1 0 0 1  |  F
+[20:16:00] [Client thread/INFO]: [CHAT] [0, 1, 0] | [0, 1, 0, 1, 0, 1, 1, 1]  |  0 1 0 1 0 1 1 1 0 0 0  |  P
+[20:16:00] [Client thread/INFO]: [CHAT] [0, 1, 1] | [0, 1, 0, 1, 0, 1, 1, 1]  |  0 1 0 1 0 1 1 1 0 1 0  |  P
+[20:16:00] [Client thread/INFO]: [CHAT] [1, 0, 0] | [0, 1, 0, 1, 0, 0, 1, 0]  |  0 1 0 1 0 0 1 0 0 0 1  |  P
+[20:16:01] [Client thread/INFO]: [CHAT] [1, 0, 1] | [0, 1, 0, 1, 0, 0, 1, 0]  |  0 1 0 1 0 0 1 0 0 0 1  |  P
+[20:16:01] [Client thread/INFO]: [CHAT] [1, 1, 0] | [0, 1, 1, 1, 0, 0, 0, 1]  |  0 1 1 1 0 0 0 1 1 0 1  |  F
+[20:16:02] [Client thread/INFO]: [CHAT] [1, 1, 1] | [0, 1, 1, 1, 0, 0, 0, 1]  |  0 1 1 1 0 0 0 1 1 1 1  |  P
+[20:16:02] [Client thread/INFO]: [CHAT] Test finished successfully.
+[20:16:43] [Server thread/INFO]: Saving and pausing game...
+[20:16:43] [Server thread/INFO]: Saving chunks for level 'Project1'/overworld
+[20:16:43] [Server thread/INFO]: Saving chunks for level 'Project1'/the_nether
+[20:16:43] [Server thread/INFO]: Saving chunks for level 'Project1'/the_end
+[20:16:44] [Server thread/INFO]: Stopping server
+[20:16:44] [Server thread/INFO]: Saving players
+[20:16:44] [Server thread/INFO]: bsprouts lost connection: Disconnected
+[20:16:44] [Server thread/INFO]: bsprouts left the game
+[20:16:44] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[20:16:44] [Server thread/INFO]: Saving worlds
+[20:16:44] [Server thread/INFO]: Saving chunks for level 'Project1'/overworld
+[20:16:44] [Server thread/INFO]: Saving chunks for level 'Project1'/the_nether
+[20:16:44] [Server thread/INFO]: Saving chunks for level 'Project1'/the_end
+[20:16:44] [Client thread/INFO]: Stopping!
+[20:16:44] [Client thread/INFO]: SoundSystem shutting down...
+[20:16:45] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

@@ -1,0 +1,109 @@
+import static org.junit.Assert.*;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class PublicTests {
+	public static final String submit = "submit.txt";
+	public static final String results = "results.txt";
+	public static final int rowWidth = 1*3;
+
+	public static String[] testoutputs;
+	
+	
+	@BeforeClass
+	public static void setup() {
+		try {
+			File key1 = new File(submit);
+			FileInputStream keyin = new FileInputStream(submit);
+			byte key[] = new byte[(int) key1.length()];
+			keyin.read(key);
+			File data1 = new File(results);
+			FileInputStream datain = new FileInputStream(results);
+			//byte[] data = datain.readAllBytes();
+			byte data[] = new byte[(int)data1.length()];
+			datain.read(data);
+
+			keyin.close();
+			datain.close();
+
+			for (int i = 0; i < data.length; i++) {
+				data[i] = (byte) (data[i] ^ key[i % key.length]);
+			}
+
+			String[] results = new String(data).split("\nEOF\n"); // {test results\nEOF\nplayers}
+			
+			testoutputs = results[0].split("\n");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Test
+	public void testXOR() {
+		testRow(1);
+	}
+	
+	@Test
+	public void testAND() {
+		testRow(2);
+	}
+	
+	@Test
+	public void testOR() {
+		testRow(3);
+	}
+	
+	@Test
+	public void testADD() {
+		testRow(4);
+	}
+	
+	@Test
+	public void testSUB() {
+		testRow(5);
+	}
+	
+	@Test
+	public void testMULT() {
+		testRow(6);
+	}
+	
+	@Test
+	public void testBITSHIFTL() {
+		testRow(7);
+	}
+	
+	@Test
+	public void testBITSHIFTR() {
+		testRow(8);
+	}
+	
+	@Test
+	public void testSLT() {
+		testRow(9);
+	}
+	
+	@Test
+	public void testNOT() {
+		testRow(10);
+	}
+	
+	
+	
+	private void testColumn(int colNum) {
+		for(int i = colNum; i < testoutputs.length; i += rowWidth) {
+			assertEquals("true", testoutputs[i]);
+		}
+	}
+	
+	private void testRow(int rowNum) {
+		for (int i = rowNum*rowWidth; i < rowWidth* (rowNum+1); i+= 1) {
+			assertEquals("true", testoutputs[i]);
+		}
+	}
+
+}

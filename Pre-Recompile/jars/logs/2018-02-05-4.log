@@ -1,0 +1,78 @@
+[20:12:45] [Client thread/INFO]: Setting user: bsprouts
+[20:12:47] [Client thread/WARN]: Skipping bad option: lastServer:
+[20:12:47] [Client thread/INFO]: LWJGL Version: 2.9.4
+[20:12:48] [Client thread/INFO]: Reloading ResourceManager: Default
+[20:12:48] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[20:12:48] [Thread-3/INFO]: Initializing LWJGL OpenAL
+[20:12:48] [Thread-3/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[20:12:49] [Thread-3/INFO]: OpenAL initialized.
+[20:12:49] [Sound Library Loader/INFO]: Sound engine started
+[20:12:50] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[20:12:51] [Client thread/INFO]: Narrator library for x64 successfully loaded
+[20:12:52] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[20:12:55] [Server thread/INFO]: Starting integrated minecraft server version 1.12.2
+[20:12:55] [Server thread/INFO]: Generating keypair
+[20:12:56] [Server thread/INFO]: Loaded 488 advancements
+[20:12:56] [Server thread/INFO]: Preparing start region for level 0
+[20:12:56] [Server thread/INFO]: Changing view distance to 16, from 10
+[20:12:57] [Server thread/INFO]: bsprouts[local:E:051dadb0] logged in with entity id 8 at (859.4756338980344, 10.664257794666721, -75.77394175779978)
+[20:12:57] [Server thread/INFO]: bsprouts joined the game
+[20:12:58] [Server thread/INFO]: Saving and pausing game...
+[20:12:58] [Server thread/INFO]: Saving chunks for level 'Project1'/overworld
+[20:12:58] [Server thread/INFO]: Saving chunks for level 'Project1'/the_nether
+[20:12:58] [Server thread/INFO]: Saving chunks for level 'Project1'/the_end
+[20:12:58] [Client thread/INFO]: Loaded 12 advancements
+[20:13:00] [Client thread/INFO]: [CHAT] \n===============================\n=========Running Test 1 =========\n===============================
+[20:13:00] [Client thread/INFO]: [CHAT] [iA, iB, iC, oFALSE, oTRUE, oAND, oOR, oNOR, oNOT, oXOR, oIMPLIES, oEQUIV, oCOMPLEX, oX]
+[20:13:00] [Client thread/INFO]: [CHAT] [0, 0, 0] | [0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1]  |  0 1 0 0 1 1 1 1 0 0 1  |  F
+[20:13:00] [Client thread/INFO]: [CHAT] [0, 0, 1] | [0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1]  |  0 1 0 0 1 1 1 1 0 0 1  |  F
+[20:13:01] [Client thread/INFO]: [CHAT] [0, 1, 0] | [0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1]  |  0 1 0 1 0 1 1 1 0 0 0  |  P
+[20:13:01] [Client thread/INFO]: [CHAT] [0, 1, 1] | [0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1]  |  0 1 0 1 0 1 1 1 0 1 0  |  P
+[20:13:01] [Client thread/INFO]: [CHAT] [1, 0, 0] | [1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0]  |  0 1 0 1 0 0 1 0 0 0 1  |  P
+[20:13:01] [Client thread/INFO]: [CHAT] [1, 0, 1] | [1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0]  |  0 1 0 1 0 0 1 0 0 0 1  |  P
+[20:13:02] [Client thread/INFO]: [CHAT] [1, 1, 0] | [1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1]  |  0 1 1 1 0 0 0 1 1 0 1  |  F
+[20:13:02] [Client thread/INFO]: [CHAT] [1, 1, 1] | [1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1]  |  0 1 1 1 0 0 0 1 1 1 1  |  P
+[20:13:02] [Client thread/INFO]: [CHAT] Test finished successfully.
+[20:13:07] [Client thread/INFO]: [CHAT] \n===============================\n=========Running Test 2 =========\n===============================
+[20:13:07] [Client thread/INFO]: [CHAT] [iA, iB, iC, oFALSE, oTRUE, oAND, oOR, oNOR, oNOT, oXOR, oIMPLIES, oEQUIV, oCOMPLEX, oX]
+[20:13:08] [Client thread/INFO]: [CHAT] [0, 0, 0] | 1  |  1  |  F
+[20:13:08] [Client thread/INFO]: [CHAT] [0, 0, 1] | 1  |  1  |  F
+[20:13:08] [Client thread/INFO]: [CHAT] [0, 1, 0] | 1  |  1  |  P
+[20:13:09] [Client thread/INFO]: [CHAT] [0, 1, 1] | 1  |  1  |  P
+[20:13:09] [Client thread/INFO]: [CHAT] [1, 0, 0] | 0  |  1  |  P
+[20:13:09] [Client thread/INFO]: [CHAT] [1, 0, 1] | 0  |  1  |  P
+[20:13:09] [Client thread/INFO]: [CHAT] [1, 1, 0] | 1  |  0  |  P
+[20:13:09] [Client thread/INFO]: [CHAT] [1, 1, 1] | 1  |  0  |  P
+[20:13:09] [Client thread/INFO]: [CHAT] Test finished successfully.
+[20:13:17] [Server thread/INFO]: Saving and pausing game...
+[20:13:17] [Server thread/INFO]: Saving chunks for level 'Project1'/overworld
+[20:13:17] [Server thread/INFO]: Saving chunks for level 'Project1'/the_nether
+[20:13:17] [Server thread/INFO]: Saving chunks for level 'Project1'/the_end
+[20:13:33] [Server thread/INFO]: Saving and pausing game...
+[20:13:33] [Client thread/INFO]: [CHAT] \n===============================\n=========Running Test 3 =========\n===============================
+[20:13:33] [Client thread/INFO]: [CHAT] [iA, iB, iC, oFALSE, oTRUE, oAND, oOR, oNOR, oNOT, oXOR, oIMPLIES, oEQUIV, oCOMPLEX, oX]
+[20:13:33] [Server thread/INFO]: Saving chunks for level 'Project1'/overworld
+[20:13:33] [Server thread/INFO]: Saving chunks for level 'Project1'/the_nether
+[20:13:33] [Server thread/INFO]: Saving chunks for level 'Project1'/the_end
+[20:13:33] [Client thread/INFO]: [CHAT] [0, 0, 0] | [0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1]  |  0 1 0 0 1 1 1 1 0 0 1  |  F
+[20:13:34] [Client thread/INFO]: [CHAT] [0, 0, 1] | [0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1]  |  0 1 0 0 1 1 1 1 0 0 1  |  F
+[20:13:34] [Client thread/INFO]: [CHAT] [0, 1, 0] | [0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1]  |  0 1 0 1 0 1 1 1 0 0 0  |  P
+[20:13:34] [Client thread/INFO]: [CHAT] [0, 1, 1] | [0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1]  |  0 1 0 1 0 1 1 1 0 1 0  |  P
+[20:13:34] [Client thread/INFO]: [CHAT] [1, 0, 0] | [1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0]  |  0 1 0 1 0 0 1 0 0 0 1  |  P
+[20:13:34] [Client thread/INFO]: [CHAT] [1, 0, 1] | [1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0]  |  0 1 0 1 0 0 1 0 0 0 1  |  P
+[20:13:34] [Client thread/INFO]: [CHAT] [1, 1, 0] | [1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1]  |  0 1 1 1 0 0 0 1 1 0 1  |  F
+[20:13:35] [Client thread/INFO]: [CHAT] [1, 1, 1] | [1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1]  |  0 1 1 1 0 0 0 1 1 1 1  |  P
+[20:13:35] [Client thread/INFO]: [CHAT] Test finished successfully.
+[20:14:34] [Server thread/INFO]: Saving and pausing game...
+[20:14:34] [Server thread/INFO]: Saving chunks for level 'Project1'/overworld
+[20:14:34] [Server thread/INFO]: Saving chunks for level 'Project1'/the_nether
+[20:14:34] [Server thread/INFO]: Saving chunks for level 'Project1'/the_end
+[20:14:35] [Server thread/INFO]: Stopping server
+[20:14:35] [Server thread/INFO]: Saving players
+[20:14:36] [Server thread/INFO]: bsprouts lost connection: Disconnected
+[20:14:36] [Server thread/INFO]: bsprouts left the game
+[20:14:36] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[20:14:36] [Server thread/INFO]: Saving worlds
+[20:14:36] [Server thread/INFO]: Saving chunks for level 'Project1'/overworld
+[20:14:36] [Server thread/INFO]: Saving chunks for level 'Project1'/the_nether
+[20:14:36] [Server thread/INFO]: Saving chunks for level 'Project1'/the_end

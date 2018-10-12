@@ -1,0 +1,75 @@
+---- Minecraft Crash Report ----
+// Quite honestly, I wouldn't worry myself about that.
+
+Time: 2/4/18 9:50 PM
+Description: Ticking block entity
+
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at com.unittest.tileentity.TileEntityInput.getTag(TileEntityInput.java:13)
+	at com.unittest.tileentity.TileEntityIOBase.sendTagInChat(TileEntityIOBase.java:79)
+	at com.unittest.tileentity.TileEntityIOBase.update(TileEntityIOBase.java:109)
+	at net.minecraft.world.World.updateEntities(World.java:2868)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:628)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:796)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:703)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:175)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:566)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at com.unittest.tileentity.TileEntityInput.getTag(TileEntityInput.java:13)
+	at com.unittest.tileentity.TileEntityIOBase.sendTagInChat(TileEntityIOBase.java:79)
+	at com.unittest.tileentity.TileEntityIOBase.update(TileEntityIOBase.java:109)
+
+-- Block entity being ticked --
+Details:
+	Name: minecraft:input // com.unittest.tileentity.TileEntityInput
+	Block type: ID #257 (tile.inputBlock // com.unittest.block.BlockInput)
+	Block data value: 0 / 0x0 / 0b0000
+	Block location: World: (12,4,-703), Chunk: (at 12,0,1 in 0,-44; contains blocks 0,0,-704 to 15,255,-689), Region: (0,-2; contains chunks 0,-64 to 31,-33, blocks 0,0,-1024 to 511,255,-513)
+	Actual block type: ID #257 (tile.inputBlock // com.unittest.block.BlockInput)
+	Actual block data value: 0 / 0x0 / 0b0000
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:2868)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:628)
+
+-- Affected level --
+Details:
+	Level name: Test
+	All players: 1 total; [EntityPlayerMP['bsprouts'/139, l='Test', x=15.33, y=4.00, z=-702.09]]
+	Chunk stats: ServerChunkCache: 1089 Drop: 0
+	Level seed: -2322591728270883001
+	Level generator: ID 01 - flat, ver 0. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (22,4,-699), Chunk: (at 6,0,5 in 1,-44; contains blocks 16,0,-704 to 31,255,-689), Region: (0,-2; contains chunks 0,-64 to 31,-33, blocks 0,0,-1024 to 511,255,-513)
+	Level time: 18067 game time, 7020 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 104301 (now: false), thunder time: 5763 (now: true)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:796)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:703)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:175)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:566)
+	at java.lang.Thread.run(Thread.java:748)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_161, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 278650912 bytes (265 MB) / 533200896 bytes (508 MB) up to 3763863552 bytes (3589 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['bsprouts'/139, l='Test', x=15.33, y=4.00, z=-702.09]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Very likely; Jar signature invalidated

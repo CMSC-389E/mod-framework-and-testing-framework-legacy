@@ -1,0 +1,66 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 5/11/18 8:02 PM
+Description: Ticking memory connection
+
+java.nio.file.InvalidPathException: Illegal char <:> at index 19: saves\Project 8 RAM: cokeefe1\.info
+	at sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at sun.nio.fs.WindowsPath.parse(WindowsPath.java:94)
+	at sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:255)
+	at java.nio.file.Paths.get(Paths.java:84)
+	at net.minecraft.server.management.PlayerList.initializeConnectionToPlayer(PlayerList.java:156)
+	at net.minecraft.server.network.NetHandlerLoginServer.tryAcceptPlayer(NetHandlerLoginServer.java:140)
+	at net.minecraft.server.network.NetHandlerLoginServer.update(NetHandlerLoginServer.java:68)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:303)
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:193)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:825)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:711)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:175)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:567)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at sun.nio.fs.WindowsPath.parse(WindowsPath.java:94)
+	at sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:255)
+	at java.nio.file.Paths.get(Paths.java:84)
+	at net.minecraft.server.management.PlayerList.initializeConnectionToPlayer(PlayerList.java:156)
+	at net.minecraft.server.network.NetHandlerLoginServer.tryAcceptPlayer(NetHandlerLoginServer.java:140)
+	at net.minecraft.server.network.NetHandlerLoginServer.update(NetHandlerLoginServer.java:68)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:303)
+
+-- Ticking connection --
+Details:
+	Connection: net.minecraft.network.NetworkManager@2cc0e182
+Stacktrace:
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:193)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:825)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:711)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:175)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:567)
+	at java.lang.Thread.run(Thread.java:748)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_161, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 335679320 bytes (320 MB) / 567803904 bytes (541 MB) up to 3763863552 bytes (3589 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Profiler Position: N/A (disabled)
+	Player Count: 0 / 8; []
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Very likely; Jar signature invalidated
