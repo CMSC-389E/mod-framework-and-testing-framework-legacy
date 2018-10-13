@@ -11,15 +11,28 @@ import org.junit.Test;
 public class StudentTesting {
 	public static final int rowWidth = 14;
 	
-	public static String[] testoutputs;
-	
 	public static int[] registers = {0,0,0,0,0,0,0,0};
 	public static int PC = 0;
 	
+	/*
+	 * r1: beginning of exp loop
+	 * r4: beginning of mult loop
+	 */
 	public static int[] inputs = {
-		0,0,0,0,	0,0,0,	0,0,0,	0,0,0,0,  //add your inputs here	
-			
-	};
+/*0*/	0,1,0,0,	1,0,1,	0,0,0,	0,0,0,1, //set the initial product to 1
+/*1*/	0,0,1,1,	1,1,1,	1,0,1,	0,0,0,0, //set our current count to be the product from before
+/*2*/	1,0,1,0,	0,0,0,	0,1,1,	0,0,0,0, //end the loop when no more powers and exit
+/*3*/	0,1,1,0,	0,1,1,	0,1,1,	0,0,0,1, //exp -= 1
+/*4*/	0,0,1,1,	1,0,0,	0,1,0,	0,0,0,0, //set countdown
+/*5*/	0,0,1,1,	1,0,1,	0,0,0,	0,0,0,0, //zero out current product
+/*6*/	1,0,1,0,	1,0,0,	1,0,0,	0,1,0,1, //if no more to do in product, jump back to power outer loop
+/*7*/	0,0,1,1,	1,0,1,	1,1,1,	0,1,0,1, //counter += current product base times.  prod * a
+/*8*/	0,1,1,0,	1,0,0,	1,0,0,	0,0,0,1, //decrement counter for product
+/*9*/	1,0,1,0,	1,0,0,	0,0,0,	0,0,1,1  //jump back up in loop		
+};
+	
+	public static String[] testoutputs = new String[inputs.length];
+		
 	
 	@BeforeClass
 	public static void setup() {
@@ -31,17 +44,17 @@ public class StudentTesting {
 
 	@Test
 	public void testExp1() {
-		run_prog(3,5);
+		run_prog(2,3);
 	}
 	
 	@Test
 	public void testExp2() {
-		run_prog(1,1);
+		//run_prog(1,1);
 	}
 	
 	@Test
 	public void testExp3() {
-		run_prog(4, 3);
+		//run_prog(4, 3);
 	}
 	
 	private void run_prog(int r2_init, int r3_init) {
@@ -57,7 +70,7 @@ public class StudentTesting {
 		int[] command = new int[4];
 		boolean is_over;
 		do {
-			print_program_state();
+			//print_program_state();
 			is_over = read_line(command); 
 			if (!is_over) {
 				System.out.println("Executing command: " + Arrays.toString(command));
@@ -160,13 +173,18 @@ public class StudentTesting {
 			case 10: //r2 = 0, PC = R3
 				hasDestination = false;
 				operation = "brancheq";
-				if (registers[arg2] == 0)
+				if (registers[arg2] == 0) {
+					arg3 = (arg1 & 0x11) << 4 | arg3;
+					int flag   = arg1 >> 2;
 					if (arg3 == 0) {
 						PC = testoutputs.length / rowWidth - 1;
 					}
 					else {
-						PC = arg3 - 1;
+						
+						PC += (-2*flag + 1)*arg3 - 1;
 					}
+					
+				}
 				break;	
 			case 11: //stored at r2 + imm -> r1
 			case 12: //take r1 and stick in r2 + imm
@@ -177,10 +195,10 @@ public class StudentTesting {
 			
 		}
 		
-		System.out.println("Line " + lastPC + ": executing " + operation + 
-				" with register " + arg2 + " (value " + registers[arg2] +") and " +
-				((dereference) ? "register " + temp + " (value " + arg3 + ")" :
-					"immediate " + arg3) + ".  " + (hasDestination ? "Destination: Register " + arg1 + "." : ""));
+		//System.out.println("Line " + lastPC + ": executing " + operation + 
+		//		" with register " + arg2 + " (value " + registers[arg2] +") and " +
+		//		((dereference) ? "register " + temp + " (value " + arg3 + ")" :
+		//			"immediate " + arg3) + ".  " + (hasDestination ? "Destination: Register " + arg1 + "." : "flag: " + (arg1 >> 2)));
 	}
 	
 	

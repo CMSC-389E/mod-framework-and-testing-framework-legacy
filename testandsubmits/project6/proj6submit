@@ -1,0 +1,11 @@
+# Submit server .submit file for
+#  Course CMSC389E
+#  Project 6: instruction counter
+
+courseName=CMSC389E
+semester=201808
+projectNumber=6
+courseKey=c0b5aa47e8bcb261
+authentication.type=ldap
+baseURL=https://submit.cs.umd.edu:443/fall2018
+submitURL=https://submit.cs.umd.edu:443/fall2018/eclipse/SubmitProjectViaEclipse

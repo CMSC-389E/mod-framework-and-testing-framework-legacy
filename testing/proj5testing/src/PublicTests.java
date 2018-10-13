@@ -78,6 +78,7 @@ public class PublicTests {
 			String[] results = new String(data).split("\nEOF\n"); // {test results\nEOF\nplayers}
 			
 			testoutputs = results[0].split("\n");
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -237,13 +238,17 @@ public class PublicTests {
 			case 10: //r2 = 0, PC = R3
 				hasDestination = false;
 				operation = "brancheq";
-				if (registers[arg2] == 0)
+				if (registers[arg2] == 0) {
+					arg3 = (registers[arg1] & 0x11) << 4 | arg3;
+					int flag   = registers[arg1] >> 2;
 					if (arg3 == 0) {
 						PC = testoutputs.length / rowWidth - 1;
 					}
 					else {
-						PC = arg3 - 1;
+						
+						PC += (-2*flag + 1)*arg3 - 1;
 					}
+				}
 				break;	
 			case 11: //stored at r2 + imm -> r1
 			case 12: //take r1 and stick in r2 + imm

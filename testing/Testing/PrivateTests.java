@@ -22,12 +22,12 @@ public class PrivateTests {
 		assocs.put("abrassel", "bsprouts");
 		assocs.put("jklein17","failplus");
 		
-		assocs.put("abhinav", "");
-		assocs.put("bbock1", "");
+		assocs.put("abhinav", "ahbinav97");
+		assocs.put("bbock1", "114772534");
 		assocs.put("kdohert3", "Sky79731");
 		assocs.put("rodneyduff1994", "");
 		assocs.put("ahall128", "Thulgrimm");
-		assocs.put("ahuang10", "");
+		assocs.put("ahuang10", "ahuang10");
 		assocs.put("dkelly18", "Danielemur");
 		assocs.put("dkline1", "");
 		assocs.put("jnengel", "");
