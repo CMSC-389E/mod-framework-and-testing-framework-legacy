@@ -15,31 +15,20 @@ import org.junit.Test;
 
 import junit.framework.AssertionFailedError;
 
-public class PublicTests {
-	public static final String submit = "submit.txt";
-	public static final String results = "results.txt";
-	public static final int rowWidth = 14;
-
+public class StudentTesting {
 	/*
 	 * r1: beginning of exp loop
 	 * r4: beginning of mult loop
 	 */
-//	public static int[] inputs = {
-///*0*/	0,1,0,0,	1,0,1,	0,0,0,	0,0,0,1, //set the initial product to 1
-///*1*/	0,0,1,1,	1,1,1,	1,0,1,	0,0,0,0, //set our current count to be the product from before
-///*2*/	1,0,1,0,	0,0,0,	0,1,1,	0,0,0,0, //end the loop when no more powers and exit
-///*3*/	0,1,1,0,	0,1,1,	0,1,1,	0,0,0,1, //exp -= 1
-///*4*/	0,0,1,1,	1,0,0,	0,1,0,	0,0,0,0, //set countdown
-///*5*/	0,0,1,1,	1,0,1,	0,0,0,	0,0,0,0, //zero out current product
-///*6*/	1,0,1,0,	0,0,0,	1,0,0,	0,0,0,1, //if no more to do in product, jump back to power outer loop
-///*7*/	0,0,1,1,	1,0,1,	1,1,1,	0,1,0,1, //counter += current product base times.  prod * a
-///*8*/	0,1,1,0,	1,0,0,	1,0,0,	0,0,0,1, //decrement counter for product
-///*9*/	1,0,1,0,	0,0,0,	0,0,0,	0,1,1,0  //jump back up in loop
-//		
-		
-//	};
+	public static final int rowWidth = 14;
 	
-	public static String[] testoutputs;
+	public static int[] inputs = {
+			
+			
+			
+	};
+	
+	public static String[] testoutputs = new String[inputs.length];
 	
 	public static int[] registers = {0,0,0,0,0,0,0,0};
 	public static final int[] parts = {4, 3, 3, 4};
@@ -48,40 +37,11 @@ public class PublicTests {
 	public static String dialogue;
 	
 	
-//	@BeforeClass
-//	public static void setup() {
-//		for (int i = 0; i < inputs.length; i ++) {
-//			testoutputs[i] = (inputs[i] == 0) ? "false" : "true";
-//		}
-//	}
-	
 	@BeforeClass
 	public static void setup() {
-		try {
-			File key1 = new File(submit);
-			FileInputStream keyin = new FileInputStream(submit);
-			byte key[] = new byte[(int) key1.length()];
-			keyin.read(key);
-			File data1 = new File(results);
-			FileInputStream datain = new FileInputStream(results);
-			//byte[] data = datain.readAllBytes();
-			byte data[] = new byte[(int)data1.length()];
-			datain.read(data);
-
-			keyin.close();
-			datain.close();
-
-			for (int i = 0; i < data.length; i++) {
-				data[i] = (byte) (data[i] ^ key[i % key.length]);
-			}
-
-			String[] results = new String(data).split("\nEOF\n"); // {test results\nEOF\nplayers}
-			
-			testoutputs = results[0].split("\n");
-		} catch (Exception e) {
-			e.printStackTrace();
+		for (int i = 0; i < inputs.length; i ++) {
+			testoutputs[i] = (inputs[i] == 0) ? "false" : "true";
 		}
-		
 	}
 	
 	@Before
@@ -91,7 +51,7 @@ public class PublicTests {
 	
 
 	@Test
-	public void testExp3tothe5th1() {
+	public void testExp1() {
 		try {
 			run_prog(3,5);
 		}
@@ -102,7 +62,7 @@ public class PublicTests {
 	
 	
 	@Test
-	public void testExp1tothe1st() {
+	public void testExp2() {
 	try {
 		run_prog(1,1);
 	}
@@ -112,7 +72,7 @@ public class PublicTests {
 	}
 	
 	@Test
-	public void testExp4tothe3rd() {
+	public void testExp3() {
 		try {
 			run_prog(4,3);
 		}

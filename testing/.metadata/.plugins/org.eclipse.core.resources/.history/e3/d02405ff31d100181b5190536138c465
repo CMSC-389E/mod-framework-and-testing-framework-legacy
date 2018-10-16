@@ -91,7 +91,7 @@ public class PublicTests {
 	
 
 	@Test
-	public void testExp3tothe5th1() {
+	public void testExp3tothe5th() {
 		try {
 			run_prog(3,5);
 		}
