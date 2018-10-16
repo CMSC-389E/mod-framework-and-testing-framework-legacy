@@ -234,9 +234,9 @@ public class PublicTests {
 				operation = "slt";
 				registers[arg1] = (registers[arg2] < registers[arg3]) ? 1 : 0;
 				break;
-			case 11: //r2 = 0, PC = R3
+			case 10: //r2 = 0, PC = R3
 				arg3 = registers[arg3];
-			case 10: //stored at r2 + imm -> r1
+			case 11: //stored at r2 + imm -> r1
 				operation = "brancheq";
 				if (registers[arg2] == 0)
 					if (arg3 == 0) {

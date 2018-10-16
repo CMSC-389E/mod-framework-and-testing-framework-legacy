@@ -180,7 +180,7 @@ public class PublicTests {
 		String operation = "oops";
 		boolean dereference = false;
 		int temp = arg3;
-		boolean hasDestination = (opcode != 10 && opcode != 11);
+		boolean hasDestination = true;
 		int lastPC = PC;
 		if (arg1 == 0 && opcode != 10) 
 			throw new CompilerError("Tried to write to zero register at line: " + PC);
@@ -234,9 +234,8 @@ public class PublicTests {
 				operation = "slt";
 				registers[arg1] = (registers[arg2] < registers[arg3]) ? 1 : 0;
 				break;
-			case 11: //r2 = 0, PC = R3
-				arg3 = registers[arg3];
-			case 10: //stored at r2 + imm -> r1
+			case 10: //r2 = 0, PC = R3
+				hasDestination = false;
 				operation = "brancheq";
 				if (registers[arg2] == 0)
 					if (arg3 == 0) {
@@ -245,7 +244,10 @@ public class PublicTests {
 					else {
 						PC = arg3 - 1;
 					}
-				break;
+				break;	
+			case 11: //stored at r2 + imm -> r1
+			case 12: //take r1 and stick in r2 + imm
+				throw new CompilerError("Tried to use a load/store command at line: " + PC);
 			default:
 				throw new CompilerError("Tried to use command " + opcode + 
 						"This is not in the valid command range. Line: " + PC);
